@@ -30,8 +30,20 @@ footer p {
 body {
   height: 100%;
 }
+
+.btn {
+  margin-bottom: 5px;
+  margin-left: 10%;
+}
+
+.alert {
+  font-weight: bold; 
+  margin-left:10%;
+}
   
-body {
+.login-body {
+  width: 50%;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -46,10 +58,6 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: auto;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
 }
 
 .form-signin .form-control {
