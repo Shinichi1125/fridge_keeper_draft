@@ -1,18 +1,6 @@
 import React from "react";
 
-function Login(props){
-
-    let {letLogin, propBoolean} = props;
-
-    function checkClicked(){
-      console.log("Button clicked!");
-      console.log(props);
-      console.log(letLogin);
-      console.log(propBoolean);
-      alert("Button clicked!")
-      //event.preventDefault();
-    }
-
+function Login(prop){
     return (
       <div className="login-body">
         <form> 
@@ -28,14 +16,12 @@ function Login(props){
           <br></br>
           <button 
             className="btn btn-success"
-            onClick={checkClicked}
+            onClick={prop.onClick}
           >   
             Easy Log in
           </button>
           <br></br>
-          <p className="alert alert-info">↑ Just click "Easy Log in" and you can log in</p>
-
-          
+          <p className="alert alert-info">↑ Just click "Easy Log in" and you can log in</p>  
         </form>
       </div> 
     );
