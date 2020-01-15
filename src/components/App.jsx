@@ -15,8 +15,8 @@ function App(){
 
     return <div>
         <Header onClick={letLogout}  />
-        {!loggedin ? 
-            <Login onClick={letLogin} /> :
+        {!loggedin? 
+            <Login onClick={letLogin} />:
             <div>
                 <h1>Welcome to Fridge Manager!</h1>
                 <Footer/>
