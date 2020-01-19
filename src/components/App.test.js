@@ -3,12 +3,15 @@ import { shallow } from 'enzyme';
 import App from './App';
 import "../setupTests"
 
-const app = shallow(<App />);
+describe('App', () => {
+  const app = shallow(<App />);
 
-it('renders correctly', () => {
-  expect(app).toMatchSnapshot();
+  it('renders correctly', () => {
+    expect(app).toMatchSnapshot();
+  });
+
+  it('initializes the `state` of the loggedin', () => {
+    expect(app.state().loggedin).toEqual(false);
+  });
 });
 
-it('initializes the `state` of the loggedin', () => {
-  expect(app.state().loggedin).toEqual(false);
-});
